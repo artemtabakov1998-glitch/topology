@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Формы</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<h2>Меню</h2>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="info.html">Основные понятия</a></li>
+<li><a href="gallery.html">Картинки</a></li>
+<li><a href="table.html">Таблица</a></li>
+<li><a href="materials.html">Материалы</a></li>
+<li><a href="form.html" class="active">Формы</a></li>
+<li><a href="passport.html">Паспорт</a></li>
+<li><a href="DOM.html">Считывание из DOM</a></li>
+<li><a href="task.html">Задача</a></li>
+<li><a href="info.html#homeomorphism">Гомеоморфизм</a></li>
+<li><a href="https://www.hse.ru/" target="_blank">Сайт ВШЭ</a></li>
+</ul>
+<a href="index.html"><img src="klein.png" width="60" alt="На главную"></a>
+
+<hr>
+<h1>Формы</h1>
+<h2>Контактные данные</h2>
+<form action="https://httpbin.org/get" method="get" target="_blank">
+<p><label>Фамилия: <input type="text" name="surname" value="Табаков" required></label></p>
+<p><label>Имя: <input type="text" name="first_name" value="Артём" required></label></p>
+<p><label>Группа: <input type="text" name="study_group" value="БМТ 255" required></label></p>
+<p><label>Телефон: <input type="tel" name="phone" placeholder="+7..." required></label></p>
+<p><label>Электронная почта: <input type="email" name="email" placeholder="student@example.com" required></label></p>
+<p><label>Дата отправки: <input type="date" name="sent_date" value="2026-10-14" required></label></p>
+<input type="submit" value="Отправить">
+</form>
+<h2>Запись на кружок по топологии</h2>
+<form action="https://httpbin.org/get" method="get" target="_blank">
+<p><label>Имя участника: <input type="text" name="participant" value="Артём" required></label></p>
+<p><label>Количество занятий: <input type="number" name="lesson_count" min="1" max="20" value="4" required></label></p>
+<p>Формат: <label><input type="radio" name="format" value="online" checked>Онлайн</label> <label><input type="radio" name="format" value="offline">Очно</label></p>
+<p>Темы: <label><input type="checkbox" name="topics" value="surfaces" checked>Поверхности</label> <label><input type="checkbox" name="topics" value="quotients">Факторпространства</label></p>
+<p><label>Первое занятие: <input type="date" name="first_lesson" value="2026-10-21" required></label></p>
+<p><label>Учебный пароль: <input type="password" name="demo_password" value="topology-demo" required></label></p>
+<input type="hidden" name="club" value="topology">
+<p><input type="submit" value="Отправить заявку"></p>
+</form>
+<p>Учебная отправка данных. Используйте тестовый пароль.</p>
+<p><a href="#top">К началу</a></p>
+
+</body>
+</html>

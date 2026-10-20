@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Изменяем кириллицу на латиницу по клику</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+<h2>Меню</h2>
+<ul>
+<li><a href="index.html">Главная</a></li>
+<li><a href="info.html">Основные понятия</a></li>
+<li><a href="gallery.html">Картинки</a></li>
+<li><a href="table.html">Таблица</a></li>
+<li><a href="materials.html">Материалы</a></li>
+<li><a href="form.html">Формы</a></li>
+<li><a href="passport.html" class="active">Паспорт</a></li>
+<li><a href="DOM.html">Считывание из DOM</a></li>
+<li><a href="task.html">Задача</a></li>
+<li><a href="info.html#homeomorphism">Гомеоморфизм</a></li>
+<li><a href="https://www.hse.ru/" target="_blank">Сайт ВШЭ</a></li>
+</ul>
+<a href="index.html"><img src="klein.png" width="60" alt="На главную"></a>
+
+<hr>
+<h1>Изменяем кириллицу на латиницу по клику</h1>
+
+<p>true паспорт</p>
+<table border="1" cellpadding="10">
+<tr>
+<td colspan="2">
+<h2>РОССИЙСКАЯ ФЕДЕРАЦИЯ</h2>
+<p>Паспорт выдан: <span id="issued">УМВД РОССИИ ПО ОБЛАСТИ N</span></p>
+<p>Дата выдачи: 03.04.2022</p>
+<p>Код подразделения: 000-000</p>
+<p>Серия и номер: 0000 000000</p>
+<p>Личная подпись: __________</p>
+</td>
+</tr>
+<tr>
+<td><img src="photo.png" width="110" alt="Условное фото"></td>
+<td>
+<p>Фамилия: <span id="surname">Табаков</span></p>
+<p>Имя: <span id="first-name">Артём</span></p>
+<p>Отчество: <span id="patronymic">Владимирович</span></p>
+<p>Пол: <span id="sex">МУЖ.</span></p>
+<p>Дата рождения: 11.01.<span id="birth-year">2008</span></p>
+<p>Место рождения: <span id="birthplace">Г.N</span></p>
+</td>
+</tr>
+</table>
+<p><button id="change" type="button">Изменить</button></p>
+<p><a href="#top">К началу</a></p>
+<script src="passport.js"></script>
+</body>
+</html>
